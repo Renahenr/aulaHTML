@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+body {
+  font-family: Arial, sans-serif;
+  background: #e6e6e6;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.login-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  display: inline-block;
+  min-width: 350px;
+}
+
+.logo {
+  font-family: 'Times New Roman', serif;
+  font-size: 42px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.logo span {
+  color: #1a2b8f;
+  text-shadow: 0 0 3px #001;
+}
+
+.form-group {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.help {
+  background: #2d2f32;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.entrar {
+  background: #2d2f32;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.entrar:hover, .help:hover {
+  background: #444;
+}
+
+.link {
+  display: block;
+  margin-top: 10px;
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.icons img {
+  width: 40px;
+  opacity: 0.8;
+}
+
+footer {
+  margin-top: 20px;
+  color: #444;
+  font-size: 14px;
+}
+
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NSA Online - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h1 class="logo">NSA <span>ONLINE</span></h1>
+
+      <form>
+        <div class="form-group">
+          <label for="tipo">Entrar como:</label>
+          <select id="tipo">
+            <option>ALUNO</option>
+            <option>PROFESSOR</option>
+            <option>COORDENADOR</option>
+          </select>
+
+          <label for="cod">Cod. Etec:</label>
+          <input type="text" id="cod" maxlength="3" placeholder="">
+          <button type="button" class="help">?</button>
+        </div>
+
+        <div class="form-group">
+          <label for="rm">RM:</label>
+          <input type="text" id="rm" placeholder="Digite seu login">
+
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" placeholder="Digite sua senha">
+          <button type="submit" class="entrar">ENTRAR</button>
+        </div>
+
+        <a href="#" class="link">Solicitar nova senha</a>
+
+        <div class="icons">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg" alt="Android">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="iOS">
+        </div>
+      </form>
+    </div>
+    <footer>© Sistema NSA - Desde 2008</footer>
+  </div>
+</body>
+</html>
+
+</html>
